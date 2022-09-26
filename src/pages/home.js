@@ -18,20 +18,19 @@ const Home = () => {
   }
   const monthName = toMonthName(month);
   const day = date.slice(2, 4).toString();
-  const year = date.slice(5, 9).toString();
   const time = date.slice(11, 16);
   const pmam = date.slice(20, 22);
   let today = day + " " + monthName + " " + time + pmam;
 
   return (
-    <div className="my-6 flex flex-col justify-center items-center">
+    <div className="my-8 flex flex-col justify-center items-center">
       <div className="text-center my-8 leading-none">
         <p className="text-[105px] text-cyan-900 font-bold tracking-tighter">Imagine if</p>
         <p className="text-[105px] font-bold text-cyan-600 tracking-tighter">Snapchat</p>
         <p className="text-[105px] text-cyan-900 font-bold tracking-tighter">had events.</p>
       </div>
-      <div>
-        <p className="text-slate-500">Easily host and share events with your friends across any social media.</p>
+      <div className="my-8">
+        <p className="text-slate-700 font-light text-[38px] w-[800px] text-center">Easily host and share events with your friends across any social media.</p>
       </div>
       <div className="border w-[400px] h-[650px] p-4 rounded-3xl">
         <img src={topImage} alt="top" className="rounded-xl" />
