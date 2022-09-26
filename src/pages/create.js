@@ -59,6 +59,23 @@ const Create = () => {
           />
         </div>
       </div>
+      <div>
+        <div className="border bg-slate-200 w-[25em] text-center py-4 rounded-xl flex justify-around">
+          <p className="font-bold"><span className="text-xs">A</span><span>A</span></p>
+          <div className="flex items-center">
+            <FontAwesomeIcon icon={solid('lock')} className="text-slate-400" />  
+            <a href="domain.com" className="px-2"><p>domain.com</p></a>
+          </div>
+          <FontAwesomeIcon icon={solid('arrow-rotate-left')} />
+        </div>
+        <div className="flex justify-around my-4 py-3 text-blue-400 ">
+          <FontAwesomeIcon icon={solid('chevron-left')} />
+          <FontAwesomeIcon icon={solid('chevron-right')} />
+          <FontAwesomeIcon icon={solid('angles-up')} />
+          <FontAwesomeIcon icon={solid('book')} />
+          <FontAwesomeIcon icon={solid('copy')} />
+        </div>
+      </div>
     </div>
   );
 }
