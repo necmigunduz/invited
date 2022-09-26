@@ -24,8 +24,6 @@ const Create = () => {
   let today = day + " " + monthName + " " + time + pmam;
   const btn1style =
     "border rounded-2xl px-4 py-2 bg-sky-600 text-white text-xs font-bold";
-  const btn2style =
-    "border rounded-3xl my-8 p-8 text-white bg-cyan-600 font-bold";
   return (
     <div className="my-8 flex flex-col justify-center items-center">
       <img src={topImage} alt="top" className="w-[400px] rounded-t-3xl" />
