@@ -33,8 +33,8 @@ const Home = () => {
       <div className="my-8">
         <p className="text-slate-700 font-light text-[38px] w-[800px] text-center">Easily host and share events with your friends across any social media.</p>
       </div>
-      <div className="border w-[400px] h-[650px] p-4 rounded-3xl">
-        <img src={topImage} alt="top" className="rounded-xl" />
+      <img src={topImage} alt="top" className="w-[400px] rounded-t-3xl" />
+      <div className="border w-[400px] h-[25em] p-4 rounded-b-3xl">
         <div className="ml-3 my-2">
           <h1 className="text-3xl font-bold">Movie Night</h1>
           <span className="text-xs font-bold">
