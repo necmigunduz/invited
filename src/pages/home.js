@@ -21,7 +21,8 @@ const Home = () => {
   const time = date.slice(11, 16);
   const pmam = date.slice(20, 22);
   let today = day + " " + monthName + " " + time + pmam;
-
+  const btn1style = 'border rounded-2xl px-4 py-2 bg-sky-600 text-white text-xs font-bold'
+  const btn2style = 'border rounded-3xl my-8 p-8 text-white bg-cyan-600 font-bold'
   return (
     <div className="my-8 flex flex-col justify-center items-center">
       <div className="text-center my-8 leading-none">
@@ -51,7 +52,7 @@ const Home = () => {
             <FontAwesomeIcon icon={solid('circle')} className="text-[0.2em] my-auto mx-1" />
             <span className="text-cyan-500">see guests</span>
           </p>
-          <Button btnName={"Invite"} />
+          <Button btnName={"Invite"} iconName={solid('hands')} classes={btn1style} />
         </div>
         <div>
           <Block
@@ -70,6 +71,9 @@ const Home = () => {
             secondLine={"netflix.com"}
           />
         </div>
+      </div>
+      <div>
+        <Button btnName={'Create my event'} iconName={solid('champagne-glasses')} classes={btn2style} />
       </div>
     </div>
   );
