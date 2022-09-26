@@ -5,7 +5,7 @@ This is a stylish webpage produced using React.JS, TailwindCSS, and Fontawesome 
 ![screenshot](https://github.com/necmigunduz/invited/blob/master/src/assets/screenshot.png)
 
 #### Live link
-[Click here](https://meek-marshmallow-6a3c12.netlify.app/) to see the project on Netlify.
+[Click here](https://63318228b509fc0868dae76c--dainty-lokum-f3d381.netlify.app/) to see the project on Netlify.
 
 ## Built With
 
