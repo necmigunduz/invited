@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { light, regular, solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import topImage from "../assets/top-image.png";
 import Button from "../components/button";
 import Block from "../components/block";
@@ -46,8 +46,10 @@ const Home = () => {
           </span>
         </div>
         <div className="flex justify-around border rounded-2xl p-2">
-          <p>
-            <strong>14</strong> responses . <span>see guests</span>
+          <p className="my-auto">
+            <strong>14</strong> responses 
+            <FontAwesomeIcon icon={solid('circle')} className="text-[0.2em] my-auto mx-1" />
+            <span className="text-cyan-500">see guests</span>
           </p>
           <Button btnName={"Invite"} />
         </div>
