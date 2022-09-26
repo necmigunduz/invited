@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import topImage from "../assets/top-image.png";
@@ -84,9 +85,13 @@ const Home = () => {
           </div>
           <FontAwesomeIcon icon={solid('arrow-rotate-left')} />
         </div>
-        <div className="flex justify-around my-4 py-3 text-blue-400 ">
-          <FontAwesomeIcon icon={solid('chevron-left')} />
-          <FontAwesomeIcon icon={solid('chevron-right')} />
+        <div className="flex justify-around my-4 py-3 text-blue-400 text-[1.3em]">
+          <Link to={'/'}>
+            <FontAwesomeIcon icon={solid('chevron-left')} className="text-slate-400" />
+          </Link>
+          <Link to={'/create'}>
+           <FontAwesomeIcon icon={solid('chevron-right')} />
+          </Link>   
           <FontAwesomeIcon icon={solid('angles-up')} />
           <FontAwesomeIcon icon={solid('book')} />
           <FontAwesomeIcon icon={solid('copy')} />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import topImage from "../assets/birthday.png";
@@ -21,8 +22,10 @@ const Create = () => {
   const time = date.slice(11, 16);
   const pmam = date.slice(20, 22);
   let today = day + " " + monthName + " " + time + pmam;
-  const btn1style = 'border rounded-2xl px-4 py-2 bg-sky-600 text-white text-xs font-bold'
-  const btn2style = 'border rounded-3xl my-8 p-8 text-white bg-cyan-600 font-bold'
+  const btn1style =
+    "border rounded-2xl px-4 py-2 bg-sky-600 text-white text-xs font-bold";
+  const btn2style =
+    "border rounded-3xl my-8 p-8 text-white bg-cyan-600 font-bold";
   return (
     <div className="my-8 flex flex-col justify-center items-center">
       <img src={topImage} alt="top" className="w-[400px] rounded-t-3xl" />
@@ -40,11 +43,18 @@ const Create = () => {
         </div>
         <div className="flex justify-around border rounded-2xl p-2 bg-white">
           <p className="my-auto">
-            <strong>14</strong> responses 
-            <FontAwesomeIcon icon={solid('circle')} className="text-[0.2em] my-auto mx-1" />
+            <strong>14</strong> responses
+            <FontAwesomeIcon
+              icon={solid("circle")}
+              className="text-[0.2em] my-auto mx-1"
+            />
             <span className="text-cyan-500">see guests</span>
           </p>
-          <Button btnName={"Invite"} iconName={solid('hands')} classes={btn1style} />
+          <Button
+            btnName={"Invite"}
+            iconName={solid("hands")}
+            classes={btn1style}
+          />
         </div>
         <div>
           <Block
@@ -61,23 +71,37 @@ const Create = () => {
       </div>
       <div>
         <div className="border bg-slate-200 w-[25em] text-center py-4 rounded-xl flex justify-around">
-          <p className="font-bold"><span className="text-xs">A</span><span>A</span></p>
+          <p className="font-bold">
+            <span className="text-xs">A</span>
+            <span>A</span>
+          </p>
           <div className="flex items-center">
-            <FontAwesomeIcon icon={solid('lock')} className="text-slate-400" />  
-            <a href="domain.com" className="px-2"><p>domain.com</p></a>
+            <FontAwesomeIcon icon={solid("lock")} className="text-slate-400" />
+            <a href="domain.com" className="px-2">
+              <p>domain.com</p>
+            </a>
           </div>
-          <FontAwesomeIcon icon={solid('arrow-rotate-left')} />
+          <FontAwesomeIcon icon={solid("arrow-rotate-left")} />
         </div>
-        <div className="flex justify-around my-4 py-3 text-blue-400 ">
-          <FontAwesomeIcon icon={solid('chevron-left')} />
-          <FontAwesomeIcon icon={solid('chevron-right')} />
-          <FontAwesomeIcon icon={solid('angles-up')} />
-          <FontAwesomeIcon icon={solid('book')} />
-          <FontAwesomeIcon icon={solid('copy')} />
+        <div className="flex justify-around my-4 py-3 text-blue-400 text-[1.5em]">
+          <Link to={"/"}>
+            <FontAwesomeIcon
+              icon={solid("chevron-left")}
+            />
+          </Link>
+          <Link to={"/create"}>
+            <FontAwesomeIcon 
+              icon={solid("chevron-right")} 
+              className="text-slate-400"
+            />
+          </Link>
+          <FontAwesomeIcon icon={solid("angles-up")} />
+          <FontAwesomeIcon icon={solid("book")} />
+          <FontAwesomeIcon icon={solid("copy")} />
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Create
+export default Create;
